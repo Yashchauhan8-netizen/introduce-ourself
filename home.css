@@ -64,6 +64,13 @@ button:hover {
 .image img {
     width: 300px;
     border-radius: 10px;
+     /* text-align: center;
+    font-style: underline bold italic black; */
+}
+
+.name {
+    text-align: center;
+    font-style: underline bold  black;
 }
 
 /* Footer */
