@@ -92,6 +92,13 @@ nav a:hover {
     box-shadow: 0 0 40px rgba(34, 211, 238, 0.6);
 }
 
+.name {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 24px;
+    color: #22d3ee;
+}
+
 /* Footer */
 footer {
     text-align: center;
