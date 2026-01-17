@@ -1,0 +1,102 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+    background: #0f172a;
+    color: #e5e7eb;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: #020617;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #22d3ee;
+}
+
+nav a {
+    color: #e5e7eb;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #22d3ee;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 60px;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero-content span {
+    color: #22d3ee;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #cbd5f5;
+}
+
+.hero-content button {
+    padding: 12px 35px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    background: #22d3ee;
+    color: #020617;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-content button:hover {
+    background: #06b6d4;
+}
+
+/* Profile Image */
+.hero-image img {
+    width: 300px;
+    border-radius: 50%;
+    border: 4px solid #22d3ee;
+    box-shadow: 0 0 40px rgba(34, 211, 238, 0.6);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+    font-size: 14px;
+    color: #94a3b8;
+}
