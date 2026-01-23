@@ -1,0 +1,173 @@
+/* =====================
+   Global Styles
+===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #d8c3b0, #f2e5db);
+}
+
+/* =====================
+   Navbar
+===================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: #f3e4d8;
+}
+
+.navbar h2 {
+  color: #4a2f1b;
+}
+
+.navbar nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #4a2f1b;
+  font-weight: 500;
+  position: relative;
+}
+
+/* Navbar hover underline (clean effect) */
+.navbar nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background: #a4653a;
+  transition: width 0.3s ease;
+}
+
+.navbar nav a:hover::after {
+  width: 100%;
+}
+
+/* =====================
+   Hero Section
+===================== */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+}
+
+.hero-text {
+  animation: fadeUp 1s ease forwards;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  color: #ffffff;
+}
+
+.hero-text p {
+  margin: 20px 0;
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+.hero-text button {
+  padding: 12px 25px;
+  background: #a4653a;
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.hero-text button:hover {
+  transform: scale(1.05);
+  background: #8b4f28;
+}
+
+.hero-img {
+  animation: fadeUp 1.2s ease forwards;
+}
+
+.hero-img img {
+  width: 380px;
+  border-radius: 12px;
+}
+
+/* =====================
+   Cards Section
+===================== */
+.cards {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px;
+}
+
+.card {
+  background: #f5e6da;
+  width: 280px;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  animation: fadeUp 1.4s ease forwards;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  margin-bottom: 15px;
+  color: #4a2f1b;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.card p,
+.card li {
+  color: #5a3a24;
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.card button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #a4653a;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.card button:hover {
+  transform: scale(1.05);
+  background: #8b4f28;
+}
+
+/* =====================
+   Animations
+===================== */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
