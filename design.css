@@ -1,6 +1,4 @@
-/* ==================================================
-   Global Styles
-================================================== */
+ /* Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -12,9 +10,7 @@ body {
   background: linear-gradient(to right, #d8c3b0, #f2e5db);
 }
 
-/* ==================================================
-   Navbar
-================================================== */
+ /* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -51,9 +47,7 @@ body {
   width: 100%;
 }
 
-/* ==================================================
-   Hero Section
-================================================== */
+/* Hero Section */
 .hero {
   display: flex;
   align-items: center;
@@ -108,9 +102,7 @@ body {
   border-radius: 12px;
 }
 
-/* ==================================================
-   Cards Section
-================================================== */
+/* Cards Section */
 .cards {
   display: flex;
   justify-content: space-around;
@@ -167,9 +159,7 @@ body {
   background-color: #8b4f28;
 }
 
-/* ==================================================
-   Animations
-================================================== */
+/* Animation */
 @keyframes fadeUp {
   from {
     opacity: 0;
