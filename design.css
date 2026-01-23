@@ -1,6 +1,6 @@
-/* =====================
+/* ==================================================
    Global Styles
-===================== */
+================================================== */
 * {
   margin: 0;
   padding: 0;
@@ -12,15 +12,15 @@ body {
   background: linear-gradient(to right, #d8c3b0, #f2e5db);
 }
 
-/* =====================
+/* ==================================================
    Navbar
-===================== */
+================================================== */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 60px;
-  background: #f3e4d8;
+  background-color: #f3e4d8;
 }
 
 .navbar h2 {
@@ -35,15 +35,15 @@ body {
   position: relative;
 }
 
-/* Navbar hover underline (clean effect) */
+/* Navbar underline hover effect */
 .navbar nav a::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -5px;
+  bottom: -6px;
   width: 0;
   height: 2px;
-  background: #a4653a;
+  background-color: #a4653a;
   transition: width 0.3s ease;
 }
 
@@ -51,9 +51,9 @@ body {
   width: 100%;
 }
 
-/* =====================
+/* ==================================================
    Hero Section
-===================== */
+================================================== */
 .hero {
   display: flex;
   align-items: center;
@@ -61,6 +61,7 @@ body {
   padding: 60px;
 }
 
+/* Text Content */
 .hero-text {
   animation: fadeUp 1s ease forwards;
 }
@@ -70,6 +71,7 @@ body {
   color: #ffffff;
 }
 
+/* Name Highlight */
 .hero-text .name {
   color: #a4653a;
 }
@@ -80,21 +82,23 @@ body {
   line-height: 1.6;
 }
 
+/* Hero Button */
 .hero-text button {
   padding: 12px 25px;
-  background: #a4653a;
+  background-color: #a4653a;
   border: none;
-  color: #fff;
+  color: #ffffff;
   border-radius: 6px;
   cursor: pointer;
-  transition: transform 0.3s ease, background 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .hero-text button:hover {
   transform: scale(1.05);
-  background: #8b4f28;
+  background-color: #8b4f28;
 }
 
+/* Image */
 .hero-img {
   animation: fadeUp 1.2s ease forwards;
 }
@@ -104,9 +108,9 @@ body {
   border-radius: 12px;
 }
 
-/* =====================
+/* ==================================================
    Cards Section
-===================== */
+================================================== */
 .cards {
   display: flex;
   justify-content: space-around;
@@ -114,7 +118,7 @@ body {
 }
 
 .card {
-  background: #f5e6da;
+  background-color: #f5e6da;
   width: 280px;
   padding: 25px;
   border-radius: 15px;
@@ -146,25 +150,26 @@ body {
   list-style: none;
 }
 
+/* Card Button */
 .card button {
   margin-top: 15px;
   padding: 10px 20px;
-  background: #a4653a;
+  background-color: #a4653a;
   border: none;
-  color: white;
+  color: #ffffff;
   border-radius: 6px;
   cursor: pointer;
-  transition: transform 0.3s ease, background 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .card button:hover {
   transform: scale(1.05);
-  background: #8b4f28;
+  background-color: #8b4f28;
 }
 
-/* =====================
+/* ==================================================
    Animations
-===================== */
+================================================== */
 @keyframes fadeUp {
   from {
     opacity: 0;
