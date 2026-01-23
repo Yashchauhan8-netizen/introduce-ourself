@@ -70,6 +70,10 @@ body {
   color: #ffffff;
 }
 
+.hero-text .name {
+  color: #a4653a;
+}
+
 .hero-text p {
   margin: 20px 0;
   color: #f5f5f5;
