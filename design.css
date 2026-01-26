@@ -91,12 +91,12 @@ body {
   color: white;
   border-radius: 6px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .hero-text button:hover {
   background-color: #8b4f28;
   transform: scale(1.05);
-  transition: 0.3s;
 }
 
 .hero-img {
@@ -160,77 +160,18 @@ body {
   color: white;
   border-radius: 6px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .card button:hover {
   background-color: #8b4f28;
   transform: scale(1.05);
-  transition: 0.3s;
 }
 
 
 /* =========================
-   About Section (FIXED)
+   About Section
 ========================= */
-
-.about-section {
-  padding: 80px 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 60px;
-}
-
-.about-img {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-
-.about-img img {
-  width: 320px;
-  border-radius: 15px;
-  object-fit: cover;
-  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
-}
-
-.about-content {
-  flex: 1;
-}
-
-.about-content h1 {
-  font-size: 40px;
-  color: #4a2f1b;
-  margin-bottom: 15px;
-}
-
-.about-content p {
-  color: #5a3a24;
-  line-height: 1.7;
-  margin-bottom: 15px;
-}
-
-
-/* Stats */
-
-.about-stats {
-  display: flex;
-  gap: 30px;
-  margin: 25px 0;
-}
-
-.about-stats div {
-  text-align: center;
-}
-
-.about-stats h3 {
-  color: #a4653a;
-  font-size: 26px;
-}
-
-/* ==========================
-   About Section Perfect
-========================== */
 
 .about-section {
   display: flex;
@@ -241,7 +182,11 @@ body {
   background: #f7e8db;
 }
 
-/* Left Image */
+/* About Image */
+
+.about-left {
+  animation: slideLeft 1.2s ease forwards;
+}
 
 .about-left img {
   width: 360px;
@@ -249,10 +194,11 @@ body {
   box-shadow: 0 15px 30px rgba(0,0,0,0.18);
 }
 
-/* Right Content */
+/* About Content */
 
 .about-right {
   max-width: 550px;
+  animation: slideRight 1.2s ease forwards;
 }
 
 .about-right h1 {
@@ -264,30 +210,46 @@ body {
 .about-right p {
   font-size: 16px;
   color: #6a4632;
-  line-height: 1.
+  line-height: 1.7;
+  margin-bottom: 14px;
 }
 
 
-.about-stats p {
+/* Skills */
+
+.about-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 25px 0;
+}
+
+.about-skills span {
+  background-color: #a4653a;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 25px;
   font-size: 14px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  animation: fadeUp 1.5s ease forwards;
 }
 
 
 /* About Button */
 
-.about-content button {
-  padding: 12px 25px;
+.about-right button {
+  padding: 12px 28px;
   background-color: #a4653a;
   border: none;
   color: white;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
-.about-content button:hover {
+.about-right button:hover {
   background-color: #8b4f28;
   transform: scale(1.05);
-  transition: 0.3s;
 }
 
 
@@ -308,14 +270,14 @@ body {
     width: 300px;
   }
 
-  .about-img img {
+  .about-left img {
     width: 260px;
   }
 }
 
 
 /* =========================
-   Animation
+   Animations
 ========================= */
 
 @keyframes fadeUp {
@@ -327,23 +289,6 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-/* your old css above */
-
-
-/* ===== About animations (PASTE HERE) ===== */
-
-.about-left {
-  animation: slideLeft 1.2s ease forwards;
-}
-
-.about-right {
-  animation: slideRight 1.2s ease forwards;
-}
-
-.about-skills span {
-  animation: fadeUp 1.5s ease forwards;
 }
 
 @keyframes slideLeft {
@@ -365,16 +310,5 @@ body {
   to {
     opacity: 1;
     transform: translateX(0);
-  }
-}
-
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
