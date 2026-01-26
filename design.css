@@ -1,6 +1,6 @@
-/* ================================
+/* =========================
    Global Styles
-================================ */
+========================= */
 
 * {
   margin: 0;
@@ -14,9 +14,9 @@ body {
 }
 
 
-/* ================================
+/* =========================
    Navbar
-================================ */
+========================= */
 
 .navbar {
   display: flex;
@@ -38,8 +38,6 @@ body {
   position: relative;
 }
 
-/* Navbar underline hover */
-
 .navbar nav a::after {
   content: "";
   position: absolute;
@@ -48,7 +46,7 @@ body {
   width: 0;
   height: 2px;
   background-color: #a4653a;
-  transition: width 0.3s ease;
+  transition: 0.3s;
 }
 
 .navbar nav a:hover::after {
@@ -56,9 +54,9 @@ body {
 }
 
 
-/* ================================
+/* =========================
    Hero Section
-================================ */
+========================= */
 
 .hero {
   display: flex;
@@ -66,8 +64,6 @@ body {
   justify-content: space-between;
   padding: 60px;
 }
-
-/* Hero Text */
 
 .hero-text {
   animation: fadeUp 1s ease forwards;
@@ -88,24 +84,20 @@ body {
   line-height: 1.6;
 }
 
-/* Hero Button */
-
 .hero-text button {
   padding: 12px 25px;
   background-color: #a4653a;
   border: none;
-  color: #ffffff;
+  color: white;
   border-radius: 6px;
   cursor: pointer;
-  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .hero-text button:hover {
-  transform: scale(1.05);
   background-color: #8b4f28;
+  transform: scale(1.05);
+  transition: 0.3s;
 }
-
-/* Hero Image */
 
 .hero-img {
   animation: fadeUp 1.2s ease forwards;
@@ -117,9 +109,9 @@ body {
 }
 
 
-/* ================================
+/* =========================
    Cards Section
-================================ */
+========================= */
 
 .cards {
   display: flex;
@@ -134,12 +126,12 @@ body {
   border-radius: 15px;
   text-align: center;
   animation: fadeUp 1.4s ease forwards;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: 0.3s;
 }
 
 .card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
 }
 
 .card h3 {
@@ -160,99 +152,148 @@ body {
   list-style: none;
 }
 
-/* Card Button */
-
 .card button {
   margin-top: 15px;
   padding: 10px 20px;
   background-color: #a4653a;
   border: none;
-  color: #ffffff;
+  color: white;
   border-radius: 6px;
   cursor: pointer;
-  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .card button:hover {
-  transform: scale(1.05);
   background-color: #8b4f28;
+  transform: scale(1.05);
+  transition: 0.3s;
 }
 
 
-/* ================================
-   About Page Section
-================================ */
+/* =========================
+   About Section (FIXED)
+========================= */
 
 .about-section {
   padding: 80px 60px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 50px;
-  animation: fadeUp 1s ease forwards;
+  justify-content: center;
+  gap: 60px;
+}
+
+.about-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .about-img img {
-  width: 350px;
+  width: 320px;
   border-radius: 15px;
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
 }
 
 .about-content {
-  max-width: 600px;
+  flex: 1;
 }
 
 .about-content h1 {
-  font-size: 42px;
+  font-size: 40px;
   color: #4a2f1b;
-  margin-bottom: 20px;
-}
-
-.about-content p {
-  font-size: 16px;
-  color: #5a3a24;
-  line-height: 1.8;
   margin-bottom: 15px;
 }
 
-/* About Skills */
-
-.about-skills {
-  margin-top: 25px;
+.about-content p {
+  color: #5a3a24;
+  line-height: 1.7;
+  margin-bottom: 15px;
 }
 
-.about-skills span {
-  display: inline-block;
-  background-color: #a4653a;
-  color: #ffffff;
-  padding: 8px 14px;
-  border-radius: 20px;
-  margin: 6px;
+
+/* Stats */
+
+.about-stats {
+  display: flex;
+  gap: 30px;
+  margin: 25px 0;
+}
+
+.about-stats div {
+  text-align: center;
+}
+
+.about-stats h3 {
+  color: #a4653a;
+  font-size: 26px;
+}
+
+/* ==========================
+   About Section Perfect
+========================== */
+
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 90px 80px;
+  gap: 70px;
+  background: #f7e8db;
+}
+
+/* Left Image */
+
+.about-left img {
+  width: 360px;
+  border-radius: 18px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.18);
+}
+
+/* Right Content */
+
+.about-right {
+  max-width: 550px;
+}
+
+.about-right h1 {
+  font-size: 44px;
+  color: #8b5a3c;
+  margin-bottom: 18px;
+}
+
+.about-right p {
+  font-size: 16px;
+  color: #6a4632;
+  line-height: 1.
+}
+
+
+.about-stats p {
   font-size: 14px;
 }
+
 
 /* About Button */
 
 .about-content button {
-  margin-top: 20px;
   padding: 12px 25px;
   background-color: #a4653a;
   border: none;
-  color: #ffffff;
+  color: white;
   border-radius: 6px;
   cursor: pointer;
-  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .about-content button:hover {
-  transform: scale(1.05);
   background-color: #8b4f28;
+  transform: scale(1.05);
+  transition: 0.3s;
 }
 
 
-/* ================================
+/* =========================
    Responsive
-================================ */
+========================= */
 
 @media (max-width: 900px) {
 
@@ -268,21 +309,20 @@ body {
   }
 
   .about-img img {
-    width: 280px;
+    width: 260px;
   }
 }
 
 
-/* ================================
-   Animations
-================================ */
+/* =========================
+   Animation
+========================= */
 
 @keyframes fadeUp {
   from {
     opacity: 0;
     transform: translateY(40px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
