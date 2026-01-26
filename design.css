@@ -1,6 +1,4 @@
-/* =========================
-   Global Styles
-========================= */
+/* Global Styles */
 
 * {
   margin: 0;
@@ -14,9 +12,7 @@ body {
 }
 
 
-/* =========================
-   Navbar
-========================= */
+/* Navbar */
 
 .navbar {
   display: flex;
@@ -54,9 +50,7 @@ body {
 }
 
 
-/* =========================
-   Hero Section
-========================= */
+/* Hero Section */
 
 .hero {
   display: flex;
@@ -109,9 +103,7 @@ body {
 }
 
 
-/* =========================
-   Cards Section
-========================= */
+/* Cards Section */
 
 .cards {
   display: flex;
@@ -169,9 +161,7 @@ body {
 }
 
 
-/* =========================
-   About Section
-========================= */
+/* About Section */
 
 .about-section {
   display: flex;
@@ -253,9 +243,7 @@ body {
 }
 
 
-/* =========================
-   Responsive
-========================= */
+/* Responsive */
 
 @media (max-width: 900px) {
 
@@ -276,9 +264,7 @@ body {
 }
 
 
-/* =========================
-   Animations
-========================= */
+/* Animations */
 
 @keyframes fadeUp {
   from {
