@@ -5,9 +5,9 @@
     border: 20px solid #48304D;
     border-top: 20px solid #E637BF;
     animation: spinAnimation 2s  0s infinite normal;
-   position:absolute;
-   top: 150px;
-   left: 500px;
+    position:absolute;
+    top: 150px;
+    left: 500px;
 }
 
 @keyframes spinAnimation {
